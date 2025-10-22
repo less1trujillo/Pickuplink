@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+*.pkl
+
+# Environments
+.venv
+venv/
+env/
+
+# Editors
+.vscode/
+.idea/
+*~
+# Logs and data
+*.log
+data/
+
+# Financial/Secrets
+config/secrets.env
