@@ -1,30 +1,49 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
+# ----------------------------------------------------------------------
+# 1. Operating System/Editor Files
+# ----------------------------------------------------------------------
+.DS_Store             # macOS desktop files
+Thumbs.db             # Windows files
+*~
 
-# Distribution / packaging
-.Python
-build/
-dist/
-eggs/
-*.egg-info/
-.installed.cfg
-*.pkl
+# IDE and Editor Directories
+.idea/                # JetBrains IDE (PyCharm)
+.vscode/              # Visual Studio Code
+*.iml                 # Project file remnants
 
-# Environments
+# ----------------------------------------------------------------------
+# 2. Python Environment & Build Artifacts
+# ----------------------------------------------------------------------
+# Virtual Environments
 .venv
 venv/
 env/
+__pycache__/
+*.py[cod]
 
-# Editors
-.vscode/
-.idea/
-*~
-# Logs and data
+# Build Artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ----------------------------------------------------------------------
+# 3. Data, Logs, and Sensitive Files (CRITICAL for PickupLink Security)
+# ----------------------------------------------------------------------
+# Log Files
 *.log
-data/
 
-# Financial/Secrets
+# Sensitive Configuration and Secrets (API Keys, DB Passwords)
+# This protects API keys like ORS_API_KEY, FINANCE_PAYOUT_API_KEY, etc.
 config/secrets.env
+config/*.key
+config/*.pem
+config/*.json
+
+# Database and Data backups
+*.sqlite3
+data/                 # Folder for temporary local data storage/caching
