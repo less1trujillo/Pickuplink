@@ -1,0 +1,5 @@
+# apps/driver_app_api/requirements.txt
+fastapi
+uvicorn
+pydantic
+requests
